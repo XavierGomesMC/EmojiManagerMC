@@ -5,7 +5,7 @@ import com.vdurmont.emoji.EmojiParser;
 public class EmojiManager {
 
     /**
-     * Detects if a text is an emoji
+     * Detects if the text is an emoji
      * @param text
      * @return True if the text is an emoji
      */
@@ -14,7 +14,7 @@ public class EmojiManager {
     }
 
     /**
-     * Returns the Unicode hex representation of an emoji
+     * Returns the Unicode hex representation of the emoji
      * @param text
      * @return The hex value of the emoji
      */
