@@ -1,7 +1,10 @@
 # A simple emoji manager for Java
 
 If you want to check if a text is an emoji use
-	EmojiManager.isEmoji(text).
+    EmojiManager.isEmoji(text)
 
 If you want to get the Unicode HEX representation of an emoji use
-	EmojiManager.getUnicodeHex(text).
+    EmojiManager.getUnicodeHex(text)
+
+To get all emojis from a text call
+    EmojiManager.getEmojis(text)

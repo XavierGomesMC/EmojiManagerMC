@@ -2,6 +2,8 @@ package com.mcemoji;
 
 import com.vdurmont.emoji.EmojiParser;
 
+import java.util.List;
+
 public class EmojiManager {
 
     /**
@@ -29,4 +31,12 @@ public class EmojiManager {
         return null;
     }
 
+    /**
+     * Finds and extracts all emojis in the given text
+     * @param text
+     * @return Emoji list
+     */
+    public List<String> getEmojis(String text) {
+        return EmojiParser.extractEmojis(text);
+    }
 }

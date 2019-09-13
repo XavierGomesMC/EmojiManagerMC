@@ -2,6 +2,8 @@ package com.mcemoji;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class EmojiManagerTest {
@@ -23,5 +25,12 @@ public class EmojiManagerTest {
         assertTrue(manager.isEmoji("\u2328\ufe0f"));
         assertFalse(manager.isEmoji("123"));
         assertFalse(manager.isEmoji("\ufffc"));
+    }
+
+    @Test
+    void getEmojis() {
+        EmojiManager manager = new EmojiManager();
+        List<String> emojis = manager.getEmojis("Hello \ud83d\ude00 world \ud83d\udda5\ufe0f");
+        assertEquals(2, emojis.size());
     }
 }
